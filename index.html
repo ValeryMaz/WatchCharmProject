@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container container-header">
+        <nav class="nav-menu">
+            <a class="header-logo" href="#">watchcharm</a>
+            <ul class="header-navmenu">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#aboutus">About Us</a></li>
+                <li><a class="nav-link" href="#catalog">Catalog</a></li>
+                <li><a class="nav-link" href="#sale">Sale</a></li>
+                <li><a class="nav-link" href="#review">Reviews</a></li>
+                <li><a class="nav-link" href="#contactus">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+        <ul class="header-social">
+            <li>
+                <a href="#">
+                <svg class="header-social" height="20" width="20">
+                    <use href="./images/icons.svg/#icon-facebook"><use>
+
+                </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <svg class="header-social" height="20" width="20">
+                    <use href="./images/icons.svg/#icon-instagram"><use>
+
+                </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <svg class="header-social" height="20" width="20">
+                    <use href="./images/icons.svg/#icon-Frame-60"><use>
+
+                </svg>
+                </a>
+            </li> 
+        </ul>
+    </div>
+</header>
+    <main>
+        <!-- SECTION HERO -->
+        <section class="section section-hero">
+            <div class="container container-hero">
+                <h1>Welcome to our collection of premium watches</h1>
+                <p>Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.</p>
+                <div class="wrapper-hero-right">
+                    <img
+                    srcset="./images/womanblonde@1x.png 1x, ./images/womanblonde@2x.png 2x"
+                      src="./images/womanblonde@1x.png"
+                      width="60"
+                      alt="woman"/>
+                    <img
+                    srcset="./images/man@1x.png 1x, ./images/man@2x.png 2x"
+                      src="./images/man@1x.png"
+                      width="60"
+                      alt="man"/>
+                    <img
+                    srcset="./images/woman@1x.png 1x, ./images/woman@2x.png 2x"
+                      src="./images/woman@1x.png"
+                      width="60"
+                      alt="woman"/>
+                    <button class="hero-btn" type="button">Scroll down</button>
+                </div>
+                <picture>
+                    <source srcset="./images/hero-desk@1x.jpg 1x, ./images/hero-desk@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="./images/hero-tablet@1x.jpg 1x, ./images/hero-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/hero-mobile@1x.jpg 1x, ./images/hero-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <img
+                      src="./images/hero-desk@1x.jpg"
+                      width="1150"
+                      alt="black watch presentation"/>
+                  </picture>
+            </div>
+        </section>
+              <!-- SECTION ABOUT US -->
+        <section class="section section-about-us">
+            <div class="container container-about-us">
+                <h2 class="header-about-us">About Us</h2>
+                <p class="text-first-about-us">Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our selection of timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll always have a reliable and stylish accessory on your wrist</p>
+                <p class="text-second-about-us">At our premium watch collection, we believe that a watch is more than just a timekeeping device - it's a statement piece that reflects your personality and style. So why settle for anything less than the best?</p>
+                <button class="btn-about-us" type="button">View catalog</button>
+                <picture>
+                    <source srcset="./images/aboutus-desk@1x.jpg 1x, ./images/aboutus-desk@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="./images/aboutus-tabl@1x.jpg 1x, ./images/aboutus-tabl@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/aboutus-mob@1x.jpg 1x, ./images/aboutus-mob@2x.jpg 2x" media="(max-width: 767px)">
+                    <img
+                      src="./images/aboutus-desk@1x.jpg"
+                      width="530"
+                      alt="watch"/>
+                  </picture >
+
+            </div>
+        </section>
+         <!-- SECTION CATALOG -->
+        <section class="section section-catalog">
+            <div class="container">
+                <h2 class="header-catalog">Catalog</h2>
+                <ul class="list-catalog">
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch1-desk@1x.png 1x, ./images/watches/watch1-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch1-tabl@1x.png 1x, ./images/watches/watch1-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./images/watches/watch1-mob@1x.png 1x, ./images/watches/watch1-mob@2x.png 2x" media="(max-width: 767px)">
+                        <img
+                          src="./images/watches/watch1-desk@1x.png"
+                          width="292"
+                          alt="Garmin Fenix 7X Pro watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Garmin Fenix 7X Pro Sapphire Sola...</h3>
+                            <p class="catalog-text">€500</p>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch2-desk@1x.png 1x, ./images/watches/watch2-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch2-tabl@1x.png 1x, ./images/watches/watch2-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./images/watches/watch2-mob@1x.png 1x, /images/watches/watch2-mob@2x.png 2x" media="(max-width: 767px)">
+                        <img
+                          src="./images/watches/watch2-desk@1x.png"
+                          width="292"
+                          alt="Garmin Marq Athlete watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Garmin Marq Athlete</h3>
+                            <p class="catalog-text">€450</p>
+                            <div>
+                    </li>
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch3-desk@1x.png 1x, ./images/watches/watch3-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch3-tabl@1x.png 1x, ./images/watches/watch3-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./images/watches/watch3-mob@1x.png 1x, ./images/watches/watch3-mob@2x.png 2x" media="(max-width: 767px)">
+                        <img
+                          src="./images/watches/watch3-desk@1x.png"
+                          width="292"
+                          alt="Garmin Descent MK1  watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Garmin Descent MK1</h3>
+                            <p class="catalog-text">€680<p>
+                            <div>
+                    </li>
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch4-desk@1x.png 1x, ./images/watches/watch4-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch4-tabl@1x.png 1x, ./images/watches/watch4-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./images/watches/watch4-mob@1x.png 1x, ./images/watches/watch4-mob@2x.png 2x" media="(max-width: 767px)">
+                        <img
+                          src="./images/watches/watch4-desk@1x.png"
+                          width="292"
+                          alt="Garmin D2 Delta PX watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Garmin D2 Delta PX</h3>
+                            <p class="catalog-text">€380<p>
+                            <div>
+                    </li>
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch5-desk@1x.png 1x, ./images/watches/watch5-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch5-tabl@1x.png 1x, ./images/watches/watch5-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <!-- <source srcset=" 1x,  2x" media="(max-width: 767px)"> -->
+                        <img
+                          src="./images/watches/watch5-desk@1x.png"
+                          width="292"
+                          alt="Garmin Fenix 6 Pro Solar watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Garmin Fenix 6 Pro Solar</h3>
+                            <p class="catalog-text">€400</p>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <picture>
+                            <source srcset="./images/watches/watch6-desk@1x.png 1x, ./images/watches/watch6-desk@2x.png 2x" media="(min-width: 1280px)">
+                            <source srcset="./images/watches/watch6-tabl@1x.png 1x, ./images/watches/watch6-tabl@2x.png 2x" media="(min-width: 768px)">
+                            <!-- <source srcset=" 1x,  2x" media="(max-width: 767px)"> -->
+                        <img
+                          src="./images/watches/watch6-desk@1x.png"
+                          width="292"
+                          alt="Tube Watch S42 watch"
+                        />
+                        </picture>
+                        <div class="wrapper-catalog">
+                            <h3 class="catalog-header">Tube Watch S42 Date Steel With...</h3>
+                            <p class="catalog-text">€395</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- SECTION ADVERTISEMENT -->
+        <section class="section section-advertisement">
+            <div class="container container-advertisement">
+            <p class="text-advertisement">Choose your story, making every moment unique. Time is your style, and we reveal it.</p>
+            <button class="btn-advertisement" type="button">Contact Us</button>
+            </div>
+        </section>
+        <!-- SECTION SALE -->
+        <section class="section section-sale">
+            <div class="container container-sale">
+                <h2 class="header-sale">Sale</h2>
+
+        </div>
+    </section>
+    <!-- SECTION REVIEWS -->
+    <section class="section section-reviews">
+        <div class="container container-reviews">
+
+        </div>
+    </section>
+    <!-- SECTION CONTACT US -->
+    <section class="section section-contact-us">
+        <div class="container container-contact-us">
+
+        </div>
+    </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container container-footer">
+
+        </div>
+    </footer>
+</body>
+</html>
