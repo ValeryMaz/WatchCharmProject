@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: "Montserrat", serif;
-    color: #0C0C0C;
-    background-color: #ffffff;
-  }
+  font-family: 'Gilroy', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
 
 h1,
 h2,
@@ -17,6 +17,21 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #242424;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.87);
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 p {
@@ -30,10 +45,26 @@ ul {
 }
 
 .container {
-  max-width: 1280px;
-  padding-left: 65px;
-  padding-right: 65px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
 }
 
 img {
@@ -47,14 +78,77 @@ img {
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ----HEADER---- */
+
+.header {
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-container,
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-social {
+  fill: #2f2f37;
+}
+.header-social {
+  display: flex;
+}
+
+.header-burger {
+  border: none;
+  background: none;
+  display: block;
+}
+
+.header-navmenu,
+.header-social {
+  display: none;
+}
+
+.header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.hero-header {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+
+  padding-bottom: 20px;
+}
+
+.hero-accent {
+  color: #3350e9;
+}
+
+.section-hero {
+  padding-top: 60px;
+}
